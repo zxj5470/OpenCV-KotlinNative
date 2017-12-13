@@ -1,4 +1,5 @@
-import libhighgui.*
+import kotlin.opencv.zxj5470.ext.*
+import kotlin.opencv.zxj5470.model.*
 
 fun main(args: Array<String>) {
     if (args.isEmpty()) {
@@ -6,9 +7,12 @@ fun main(args: Array<String>) {
         return
     }
 
-    val image = cvLoadImage(args[0], CV_LOAD_IMAGE_COLOR)
-    cvNamedWindow("title", CV_WINDOW_AUTOSIZE)
-    cvShowImage("title", image)
-    cvWaitKey(0)
-    cvDestroyAllWindows()
+    val img= Image(args[0])
+    val titleName="title"
+
+    img.show(titleName){
+        println(23333)
+        Window.waitKey()
+        titleName.windowDestroy()
+    }
 }

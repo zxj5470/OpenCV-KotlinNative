@@ -44,14 +44,25 @@
 ![finally you can see lena.jpg](./pic/pic0.png)
 
 ## C_Interop
+What you can interact-operator:
+
 - [X] libcv
 - [X] libhighgui
-- [ ] libcxcore
-- [ ] libcvaux
-- [ ] libml
+- [X] libcxcore
+
+```kotlin
+import libcv.*
+```
+
+Cannot make klib on account of cpp
+
+- :x: libcvaux 
+- :x: libml 
+
 
 ## Misc
-if your lib installed in `/usr/local/lib` (Makefile default)
+
+if your libs were installed in `/usr/local/lib` (Makefile default)
 then do these as follows:
 
 ```bash

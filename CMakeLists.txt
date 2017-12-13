@@ -23,9 +23,15 @@ cinterop(
         COMPILER_OPTS "-I ${OCV1_INCLUDE_DIR}"
 )
 
+cinterop(
+        NAME cxcore_kt
+        DEF_FILE src/c_interop/libcxcore.def
+        COMPILER_OPTS "-I ${OCV1_INCLUDE_DIR}"
+)
+
 konanc_executable(
         NAME OpenCV_KN
         SOURCES src/kotlin/
-        LIBRARIES cv_kt highgui_kt
+        LIBRARIES cv_kt highgui_kt cxcore_kt
         LINKER_OPTS "${OCV1_LIBRARY}"
 )
