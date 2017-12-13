@@ -1,9 +1,4 @@
-
-
-
-
 # OpenCV-KotlinNative
-
 
 <!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=false} -->
 <!-- code_chunk_output -->
@@ -18,9 +13,8 @@
 
 <!-- /code_chunk_output -->
 
-
 ## Dependencies
----
+
 ### Build dependencies 
 - OS: Linux 
 - konanc dependencies
@@ -31,6 +25,7 @@
 - OpenCV 1.0
     - (And you need update many files……)
     - (Maybe I will create a repository for OpenCV 1.0 Version )
+
 ### Runtime dependencies
 - libcv.so.1
 - libcvaux.so.1
@@ -49,25 +44,29 @@
 ![finally you can see lena.jpg](./pic/pic0.png)
 
 ## C_Interop
-- libcv         √
-- libhighgui    √
-- haven't been finished
-    - libcxcore
-    - libcvaux
-    - libml
+- [X] libcv
+- [X] libhighgui
+- [ ] libcxcore
+- [ ] libcvaux
+- [ ] libml
 
 ## Misc
-if your lib installed in /usr/local/lib (Makefile default)
+if your lib installed in `/usr/local/lib` (Makefile default)
 then do these as follows:
+
 ```bash
-cat /etc/ld.so.conf
+$ cat /etc/ld.so.conf
 ```
-appand one line `/usr/local/lib`
+
+appand `/usr/local/lib` at the end:
+
 ```
 include /etc/ld.so.conf.d/*.conf   # default
 /usr/local/lib
 ```
+
 command
+
 ```bash
 sudo ldconfig
 ```
