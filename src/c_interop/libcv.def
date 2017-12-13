@@ -1,0 +1,2 @@
+headers = opencv/cv.h
+linkerOpts.linux = -L/usr/local/lib -lcv
