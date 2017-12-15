@@ -42,3 +42,10 @@ konanc_executable(
         LIBRARIES cv_kt highgui_kt cxcore_kt
         LINKER_OPTS "${OCV1_LIBRARY}"
 )
+
+konanc_executable(
+        NAME OpenCV_Iamge_Scale
+        SOURCES samples/image_scale/c_interop_version src/kotlin/
+        LIBRARIES cv_kt highgui_kt cxcore_kt
+        LINKER_OPTS "${OCV1_LIBRARY}"
+)

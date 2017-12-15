@@ -9,6 +9,9 @@
 		* [Runtime dependencies](#runtime-dependencies)
 	* [Environment](#environment)
 	* [Run](#run)
+		* [sample1: Hello Lena](#sample1-hello-lena)
+		* [sample2:](#sample2)
+	* [C_Interop](#c_interop)
 	* [Misc](#misc)
 
 <!-- /code_chunk_output -->
@@ -41,7 +44,14 @@
 - Kotlin Native: kotlin-native-linux-0.4-dev-102
 
 ## Run
+### sample1: Hello Lena
 ![finally you can see lena.jpg](./pic/pic0.png)
+
+### sample2:
+Scale 
+- It needs about 30 seconds ... please wait a moment
+- so if you have a better algorithm to enhance the effect please tell me....)
+![scale](./pic/pic1.png)
 
 ## C_Interop
 What you can interact-operator:
