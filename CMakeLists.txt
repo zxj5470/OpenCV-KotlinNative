@@ -35,3 +35,10 @@ konanc_executable(
         LIBRARIES cv_kt highgui_kt cxcore_kt
         LINKER_OPTS "${OCV1_LIBRARY}"
 )
+
+konanc_executable(
+        NAME OpenCV_Hello_Lena_C
+        SOURCES samples/hello_lena/c_interop_version
+        LIBRARIES cv_kt highgui_kt cxcore_kt
+        LINKER_OPTS "${OCV1_LIBRARY}"
+)
