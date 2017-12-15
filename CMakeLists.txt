@@ -30,8 +30,8 @@ cinterop(
 )
 
 konanc_executable(
-        NAME OpenCV_KN
-        SOURCES src/kotlin/
+        NAME OpenCV_Hello_Lena_K
+        SOURCES samples/hello_lena/personal_version src/kotlin/
         LIBRARIES cv_kt highgui_kt cxcore_kt
         LINKER_OPTS "${OCV1_LIBRARY}"
 )

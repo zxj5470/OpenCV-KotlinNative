@@ -45,6 +45,7 @@
 
 ## Run
 ### sample1: Hello Lena
+[hello_lena-c_interop_version](https://github.com/zxj5470/OpenCV-KotlinNative/blob/master/samples/hello_lena/c_interop_version/CInterop.kt)
 ![finally you can see lena.jpg](./pic/pic0.png)
 
 ### sample2:
