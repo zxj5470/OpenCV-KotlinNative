@@ -19,15 +19,11 @@
 ## Dependencies
 
 ### Build dependencies 
-- OS: Linux 
-- konanc dependencies
-    - Java (because KNC still cannot bootstrap...)
-    - clang-llvm-3.9.0-linux-x86-64
-    - libffi-3.2.1-2-linux-x86-64
-    - target-gcc-toolchain-3-linux-x86-64
-- OpenCV 1.0
-    - (And you need update many files……)
-    - (Maybe I will create a repository for OpenCV 1.0 Version )
+- OS: 
+    - Linux (haven't been tested for opencv 2.4)
+    - macOS Sierra 10.12
+- konanc
+- OpenCV 2.4.13
 
 ### Runtime dependencies
 - libcv.so.1
