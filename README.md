@@ -40,7 +40,7 @@
 - Kotlin Native: kotlin-native-linux-0.4-dev-102
 
 ## Mac OS X Build:
-- opencv 2.14.3
+- opencv 2.4.3
 
 ## Run
 ### sample1: Hello Lena
