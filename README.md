@@ -1,6 +1,6 @@
 # OpenCV-KotlinNative
 
-<!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=false} -->
+<!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=true} -->
 <!-- code_chunk_output -->
 
 * [OpenCV-KotlinNative](#opencv-kotlinnative)
@@ -10,9 +10,9 @@
 	* [Environment](#environment)
 	* [Run](#run)
 		* [sample1: Hello Lena](#sample1-hello-lena)
-		* [sample2:](#sample2)
+		* [sample2: Scale a image](#sample2)
 	* [C_Interop](#c_interop)
-	* [Misc](#misc)
+	* [Misc (Linux)](#misc-linux)
 
 <!-- /code_chunk_output -->
 
@@ -26,28 +26,22 @@
 - OpenCV 2.4.13
 
 ### Runtime dependencies
-- libcv.so.1
-- libcvaux.so.1
-- libcxcore.so.1
-- libhighgui.so.1
-- libml.so.1
+- libopencv_core
+- libopencv_highgui
 
 ## Environment
-- Linux 4.9.0-deepin13-amd64 (Deepin 15.5) (PC)
+- <del>Linux 4.9.0-deepin13-amd64 (Deepin 15.5) (PC)</del>
+- macOS Sierra 10.12
 - CLion (With Kotlin and Kotlin/Native Plugins)
-- JDK 1.8.0_152
-- Kotlin 1.1.4 (CLion Kotlin Plugin Default)
-- Kotlin Native: kotlin-native-linux-0.4-dev-102
-
-## Mac OS X Build:
-- opencv 2.4.3
+- JDK 1.8
+- Kotlin Native: kotlin-native-linux-0.6.2
 
 ## Run
 ### sample1: Hello Lena
 [hello_lena-c_interop_version](https://github.com/zxj5470/OpenCV-KotlinNative/blob/master/samples/hello_lena/c_interop_version/CInterop.kt)
 ![finally you can see lena.jpg](./pic/pic0.png)
 
-### sample2:
+### sample2: Scale a image
 Scale 
 - It needs about 30 seconds ... please wait a moment 
 - (and about 15 seconds in OS X with Intel i5 2.3 GHz)
