@@ -5,8 +5,8 @@ set(CMAKE_MODULE_PATH ${CMAKE_CURRENT_LIST_DIR}/KotlinCMakeModule)
 project(OpenCV-KotlinNative Kotlin)
 
 # Linux
-set(OCV1_INCLUDE_DIR /usr/local/include)
-set(OCV1_LIBRARY "-lcv -lcxcore -lcvaux -lhighgui -lml")
+#set(OCV1_INCLUDE_DIR /usr/local/include)
+#set(OCV1_LIBRARY "-lcv -lcxcore -lcvaux -lhighgui -lml")
 
 # OpenCV2
 set(OCV2_LIBRARY "-lopencv_core -lopencv_highgui")
@@ -20,7 +20,7 @@ include_directories(${OpenCV_INCLUDE_DIRS})
 
 ##### Linux CV1
 ##### LEGACY
-link_directories(/usr/local/lib)
+#link_directories(/usr/local/lib)
 # cv1
 cinterop(
         NAME cv_kt
@@ -43,22 +43,22 @@ cinterop(
 konanc_executable(
         NAME OpenCV_Hello_Lena_K
         SOURCES samples/hello_lena/personal_version src/kotlin/
-        LIBRARIES cv_kt highgui_kt cxcore_kt
-        LINKER_OPTS "${OCV1_LIBRARY}"
+        LIBRARIES libopencv2_highgui
+        LINKER_OPTS "${OCV2_LIBRARY}"
 )
 
 konanc_executable(
         NAME OpenCV_Hello_Lena_C
         SOURCES samples/hello_lena/c_interop_version
-        LIBRARIES cv_kt highgui_kt cxcore_kt
-        LINKER_OPTS "${OCV1_LIBRARY}"
+        LIBRARIES libopencv2_highgui
+        LINKER_OPTS "${OCV2_LIBRARY}"
 )
 
 konanc_executable(
         NAME OpenCV_Image_Scale
         SOURCES samples/image_scale/c_interop_version src/kotlin/
-        LIBRARIES cv_kt highgui_kt cxcore_kt
-        LINKER_OPTS "${OCV1_LIBRARY}"
+        LIBRARIES libopencv2_highgui
+        LINKER_OPTS "${OCV2_LIBRARY}"
 )
 
 #####
@@ -78,14 +78,14 @@ cinterop(
 
 konanc_executable(
         NAME OpenCV2_Simple_Run
-        SOURCES samples/simple_run/
+        SOURCES samples/cv2_simple_run/
         LIBRARIES libopencv2_core
         LINKER_OPTS "${OCV2_LIBRARY}"
 )
 
 konanc_executable(
         NAME OpenCV_Simple_Highgui
-        SOURCES samples/simple_run_cv2_highgui/
+        SOURCES samples/cv2_simple_highgui/
         LIBRARIES libopencv2_highgui
         LINKER_OPTS "${OCV2_LIBRARY}"
 )

@@ -1,5 +1,5 @@
 import kotlinx.cinterop.*
-import libhighgui.*
+import libopencv2_highgui.*
 import kotlin.opencv.zxj5470.model.*
 
 fun main(args: Array<String>) {
@@ -51,13 +51,13 @@ fun reSampleCubic(w: Double, h: Double, source: IplImage): Double {
 
     (j - 1..j + 2).forEachIndexed { s, r ->
         (i - 1..i + 2).forEachIndexed { t, c ->
-            cvGet2D(source.ptr, c, r).useContents { values[s][t]=`val`[0] }
+            cvGet2D(source.ptr, c, r).useContents { values[s][t] = `val`[0] }
         }
     }
     val u = h - i   //取小数部分
     val v = w - j
-    val A = Array(4,{0.0})
-    val C = Array(4,{0.0})
+    val A = Array(4, { 0.0 })
+    val C = Array(4, { 0.0 })
     (1 downTo -2).forEachIndexed { s, distance ->
         A[s] = S(u + distance)
         C[s] = S(v + distance)

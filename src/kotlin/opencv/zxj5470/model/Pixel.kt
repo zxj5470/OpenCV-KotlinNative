@@ -1,6 +1,6 @@
 package kotlin.opencv.zxj5470.model
 
-import libcv.*
+import libopencv2_highgui.*
 
 open class BasePixel(type: Int = CV_8U)
 

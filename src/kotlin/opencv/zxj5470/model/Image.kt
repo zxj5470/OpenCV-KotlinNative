@@ -2,7 +2,7 @@ package kotlin.opencv.zxj5470.model
 
 import kotlinx.cinterop.CPointer
 import kotlinx.cinterop.pointed
-import libhighgui.*
+import libopencv2_highgui.*
 
 class Image(
         private var fileName: String,
