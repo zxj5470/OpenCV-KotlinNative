@@ -43,6 +43,9 @@
 - Kotlin 1.1.4 (CLion Kotlin Plugin Default)
 - Kotlin Native: kotlin-native-linux-0.4-dev-102
 
+## Mac OS X Build:
+- opencv 2.14.3
+
 ## Run
 ### sample1: Hello Lena
 [hello_lena-c_interop_version](https://github.com/zxj5470/OpenCV-KotlinNative/blob/master/samples/hello_lena/c_interop_version/CInterop.kt)
@@ -71,7 +74,7 @@ Cannot make klib on account of cpp
 - :x: libml 
 
 
-## Misc
+## Misc (Linux)
 
 if your libs were installed in `/usr/local/lib` (Makefile default)
 then do these as follows:
