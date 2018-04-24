@@ -53,7 +53,8 @@
 
 ### sample2:
 Scale 
-- It needs about 30 seconds ... please wait a moment
+- It needs about 30 seconds ... please wait a moment 
+- (and about 15 seconds in OS X with Intel i5 2.3 GHz)
 - so if you have a better algorithm to enhance the effect please tell me....)
 ![scale](./pic/pic1.png)
 
