@@ -1,4 +1,4 @@
-import libhighgui.*
+import libopencv2_highgui.*
 
 fun main(args: Array<String>) {
     if(args.isEmpty()){

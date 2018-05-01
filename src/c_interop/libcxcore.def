@@ -1,8 +1,0 @@
-#include "cxtypes.h"
-    # depend on std C
-#include "cxerror.h"
-    # depend native
-#include "cvver.h"
-    # version info
-headers = opencv/cxerror.h opencv/cvver.h opencv/cxtypes.h opencv/cv.h
-linkerOpts.linux = -L/usr/local/lib -lcv -lcxcore -lcvaux -lhighgui -lml

@@ -1,2 +1,0 @@
-headers = opencv/highgui.h opencv/cvver.h opencv/cxerror.h opencv/cxtypes.h
-linkerOpts.linux = -L/usr/local/lib -lcv -lcxcore -lcvaux -lhighgui -lml
