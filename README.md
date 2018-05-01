@@ -1,3 +1,5 @@
+# OpenCV-KotlinNative
+
 <!-- TOC -->
 
 - [OpenCV-KotlinNative](#opencv-kotlinnative)
@@ -12,7 +14,6 @@
     - [Misc (Linux)](#misc-linux)
 
 <!-- /TOC -->
-# OpenCV-KotlinNative
 
 ## Dependencies
 
@@ -22,6 +23,7 @@
     - macOS Sierra 10.12
 - Kotlin Native Version: 0.7
 - OpenCV 2.4.13
+- CLion 2018.1.2
 
 ### Runtime dependencies
 - if Ubuntu or Debian
