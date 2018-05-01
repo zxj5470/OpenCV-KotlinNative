@@ -66,6 +66,9 @@ import libopencv2_highgui.*
 if your libs were installed in `/usr/local/lib` (Makefile settings with build OpenCV2)
 like
 ```
+cd opencv2.4.*
+mkdir build
+cd build
 cmake .. -DCMAKE_INSTALL_PREFIX=/usr/local
 ```
 then do these as follows:
