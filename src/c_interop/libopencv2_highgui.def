@@ -1,3 +1,3 @@
 headers = opencv2/core/types_c.h opencv2/core/core_c.h opencv2/highgui/highgui_c.h
 linkerOpts.linux = -L/usr/local/lib -lopencv_core -lopencv_highgui
-linkerOpts.osx = -L/usr/local/Cellar/opencv@2/2.4.13.6/lib -lopencv_core -lopencv_highgui
+linkerOpts.osx = -L/usr/local/opt/opencv@2/lib -lopencv_core -lopencv_highgui

@@ -13,7 +13,7 @@ project(OpenCV-KotlinNative Kotlin)
 set(OCV2_LIBRARY "-lopencv_core -lopencv_highgui")
 if (APPLE)
     # /usr/local/Cellar/opencv@2/2.4.13.6/include
-    set(OPENCV2_INCLUDE_DIR /usr/local/Cellar/opencv@2/2.4.13.6/include)
+    set(OPENCV2_INCLUDE_DIR /usr/local/opt/opencv@2/include)
 elseif (UNIX)
     set(OPENCV2_INCLUDE_DIR /usr/local/include)
 endif ()

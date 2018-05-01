@@ -3,15 +3,15 @@
 <!-- TOC -->
 
 - [OpenCV-KotlinNative](#opencv-kotlinnative)
-    - [Dependencies](#dependencies)
-        - [Build Environment](#build-environment)
-        - [Runtime dependencies](#runtime-dependencies)
-    - [Environment](#environment)
-    - [Run](#run)
-        - [sample1: Hello Lena](#sample1-hello-lena)
-        - [sample2: Scale a image](#sample2-scale-a-image)
-    - [C_Interop](#c_interop)
-    - [Misc (Linux)](#misc-linux)
+	- [Dependencies](#dependencies)
+		- [Build Environment](#build-environment)
+		- [Runtime dependencies](#runtime-dependencies)
+	- [Environment](#environment)
+	- [Run](#run)
+		- [sample1: Hello Lena](#sample1-hello-lena)
+		- [sample2: Scale a image](#sample2-scale-a-image)
+	- [C_Interop](#c_interop)
+	- [Misc (Linux Ubuntu/Debian/Deepin)](#misc-linux-ubuntudebiandeepin)
 
 <!-- /TOC -->
 
@@ -20,8 +20,11 @@
 ### Build Environment 
 - OS: 
     - Linux (Ubuntu 18.04 + Deepin 15.5 Desktop)
-    - macOS Sierra 10.12 (`brew install opencv@2`)
-- Kotlin Native Version: 0.7
+        - sources build [Misc (Linux Ubuntu/Debian/Deepin)](#misc-linux-ubuntudebiandeepin)
+    - macOS Sierra 10.12 
+        - `brew install opencv@2`
+        - Default Directory `/usr/local/opt/opencv@2`
+- Kotlin Native version: 0.7
 - OpenCV 2.4.13
 - CLion 2018.1.2
 
@@ -58,7 +61,7 @@ What you can interact-operator:
 import libopencv2_highgui.*
 ```
 
-## Misc (Linux)
+## Misc (Linux Ubuntu/Debian/Deepin)
 
 if your libs were installed in `/usr/local/lib` (Makefile settings with build OpenCV2)
 like
