@@ -20,7 +20,7 @@
 ### Build Environment 
 - OS: 
     - Linux (Ubuntu 18.04 + Deepin 15.5 Desktop)
-    - macOS Sierra 10.12
+    - macOS Sierra 10.12 (`brew install opencv@2`)
 - Kotlin Native Version: 0.7
 - OpenCV 2.4.13
 - CLion 2018.1.2

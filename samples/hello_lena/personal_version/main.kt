@@ -11,7 +11,6 @@ fun main(args: Array<String>) {
     val titleName="title"
 
     img.show(titleName){
-        println(23333)
         Window.waitKey()
         titleName.windowDestroy()
     }
