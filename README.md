@@ -56,6 +56,7 @@ Scale
 What you can interact-operator:
 - libopencv2_core
 - libopencv2_highgui (which include the former)
+- libopencv2_imgproc (such as cvThreshold)
 
 ```kotlin
 import libopencv2_highgui.*
