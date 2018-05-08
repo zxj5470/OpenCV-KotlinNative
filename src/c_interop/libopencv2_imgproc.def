@@ -1,0 +1,3 @@
+headers = opencv2/imgproc/types_c.h opencv2/imgproc/imgproc_c.h
+linkerOpts.linux = -L/usr/local/lib -lopencv_imgproc
+linkerOpts.osx = -L/usr/local/opt/opencv@2/lib -lopencv_imgproc

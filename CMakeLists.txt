@@ -4,15 +4,9 @@ set(CMAKE_MODULE_PATH ${CMAKE_CURRENT_LIST_DIR}/KotlinCMakeModule)
 
 project(OpenCV-KotlinNative Kotlin)
 
-# Linux
-# legacy
-#set(OCV1_INCLUDE_DIR /usr/local/include)
-#set(OCV1_LIBRARY "-lcv -lcxcore -lcvaux -lhighgui -lml")
-
 # OpenCV2
-set(OCV2_LIBRARY "-lopencv_core -lopencv_highgui")
+set(OCV2_LIBRARY "-lopencv_core -lopencv_highgui -lopencv_imgproc")
 if (APPLE)
-    # /usr/local/Cellar/opencv@2/2.4.13.6/include
     set(OPENCV2_INCLUDE_DIR /usr/local/opt/opencv@2/include)
 elseif (UNIX)
     set(OPENCV2_INCLUDE_DIR /usr/local/include)
@@ -30,6 +24,12 @@ cinterop(
 cinterop(
         NAME libopencv2_highgui
         DEF_FILE src/c_interop/libopencv2_highgui.def
+        COMPILER_OPTS "-I ${OPENCV2_INCLUDE_DIR}"
+)
+
+cinterop(
+        NAME libopencv2_imgproc
+        DEF_FILE src/c_interop/libopencv2_imgproc.def
         COMPILER_OPTS "-I ${OPENCV2_INCLUDE_DIR}"
 )
 
@@ -71,5 +71,12 @@ konanc_executable(
         NAME OpenCV_Simple_Highgui
         SOURCES samples/cv2_simple_highgui/
         LIBRARIES libopencv2_highgui
+        LINKER_OPTS "${OCV2_LIBRARY}"
+)
+
+konanc_executable(
+        NAME OpenCV_Simple_Output
+        SOURCES samples/SaveImage/
+        LIBRARIES libopencv2_highgui libopencv2_imgproc
         LINKER_OPTS "${OCV2_LIBRARY}"
 )
