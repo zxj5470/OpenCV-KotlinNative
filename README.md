@@ -24,7 +24,7 @@
     - macOS Sierra 10.12 
         - `brew install opencv@2`
         - Default Directory `/usr/local/opt/opencv@2`
-- Kotlin Native version: 0.7
+- [Kotlin Native](https://github.com/JetBrains/kotlin-native) version: 0.7
 - OpenCV 2.4.13
 - CLion 2018.1.2
 
